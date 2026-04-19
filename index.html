@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <!-- =============================================
+       SmartTaskPro — Production Landing Page
+       Author: SmartTaskPro Team
+       Version: 1.0.0
+  ============================================= -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Meta Tags -->
+  <title>SmartTaskPro — Boost Your Productivity</title>
+  <meta name="description" content="SmartTaskPro helps you manage tasks, collaborate with your team, and stay organized in one powerful place." />
+  <meta name="keywords" content="task management, productivity, team collaboration, project management, SmartTaskPro" />
+  <meta name="author" content="SmartTaskPro" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SmartTaskPro — Boost Your Productivity" />
+  <meta property="og:description" content="Manage tasks, collaborate with your team, and stay organized in one place." />
+  <meta property="og:url" content="https://smarttaskpro.app" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SmartTaskPro — Boost Your Productivity" />
+  <meta name="twitter:description" content="Manage tasks, collaborate with your team, and stay organized in one place." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://smarttaskpro.app" />
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonts: Syne (display) + DM Sans (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✅</text></svg>" />
+</head>
+<body>
+
+  <!-- =============================================
+       SKIP NAVIGATION — Accessibility
+  ============================================= -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =============================================
+       NAVBAR
+  ============================================= -->
+  <header class="navbar" role="banner" id="navbar">
+    <div class="navbar__container">
+
+      <!-- Logo -->
+      <a href="#" class="navbar__logo" aria-label="SmartTaskPro home">
+        <span class="navbar__logo-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="28" rx="8" fill="currentColor"/>
+            <path d="M8 14.5L12 18.5L20 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="navbar__logo-text">SmartTaskPro</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="navbar__nav" role="navigation" aria-label="Main navigation">
+        <ul class="navbar__nav-list" role="list">
+          <li><a href="#features" class="navbar__nav-link">Features</a></li>
+          <li><a href="#solutions" class="navbar__nav-link">Solutions</a></li>
+          <li><a href="#pricing" class="navbar__nav-link">Pricing</a></li>
+          <li><a href="#testimonials" class="navbar__nav-link">Reviews</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Controls -->
+      <div class="navbar__actions">
+        <!-- Dark/Light Mode Toggle -->
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle dark mode"
+          aria-pressed="false"
+          type="button"
+        >
+          <span class="theme-toggle__icon theme-toggle__icon--light" aria-hidden="true">
+            <!-- Sun -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+          </span>
+          <span class="theme-toggle__icon theme-toggle__icon--dark" aria-hidden="true">
+            <!-- Moon -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </span>
+        </button>
+
+        <a href="#cta" class="btn btn--primary navbar__cta">Get Started</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button
+          class="navbar__hamburger"
+          id="menuToggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+          type="button"
+        >
+          <span class="navbar__hamburger-bar"></span>
+          <span class="navbar__hamburger-bar"></span>
+          <span class="navbar__hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav
+      class="navbar__mobile-menu"
+      id="mobileMenu"
+      role="navigation"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <ul class="navbar__mobile-list" role="list">
+        <li><a href="#features" class="navbar__mobile-link">Features</a></li>
+        <li><a href="#solutions" class="navbar__mobile-link">Solutions</a></li>
+        <li><a href="#pricing" class="navbar__mobile-link">Pricing</a></li>
+        <li><a href="#testimonials" class="navbar__mobile-link">Reviews</a></li>
+        <li><a href="#cta" class="btn btn--primary navbar__mobile-cta">Get Started</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =============================================
+       MAIN CONTENT
+  ============================================= -->
+  <main id="main-content">
+
+    <!-- =============================================
+         HERO SECTION
+    ============================================= -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <!-- Decorative background blobs -->
+      <div class="hero__blob hero__blob--1" aria-hidden="true"></div>
+      <div class="hero__blob hero__blob--2" aria-hidden="true"></div>
+      <div class="hero__grid-overlay" aria-hidden="true"></div>
+
+      <div class="container hero__container">
+        <!-- Text Content -->
+        <div class="hero__content fade-in">
+          <div class="hero__badge" aria-label="New feature announcement">
+            <span class="hero__badge-dot" aria-hidden="true"></span>
+            Now with AI-powered task suggestions
+          </div>
+
+          <h1 class="hero__heading" id="hero-heading">
+            Boost Your Productivity<br />
+            with <span class="hero__heading--accent">SmartTaskPro</span>
+          </h1>
+
+          <p class="hero__subtext">
+            Manage tasks, collaborate with your team, and stay
+            organized in one place. The productivity suite built for
+            modern teams.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#cta" class="btn btn--primary btn--lg">
+              Get Started — It's Free
+            </a>
+            <button class="btn btn--ghost btn--lg" id="watchDemoBtn" type="button" aria-label="Watch product demo video">
+              <span class="btn__play-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </span>
+              Watch Demo
+            </button>
+          </div>
+
+          <div class="hero__social-proof">
+            <div class="hero__avatars" aria-hidden="true">
+              <span class="hero__avatar hero__avatar--1">JD</span>
+              <span class="hero__avatar hero__avatar--2">PS</span>
+              <span class="hero__avatar hero__avatar--3">MR</span>
+              <span class="hero__avatar hero__avatar--4">AK</span>
+            </div>
+            <p class="hero__social-proof-text">
+              <strong>12,000+</strong> teams already boosting productivity
+            </p>
+          </div>
+        </div>
+
+        <!-- Hero Illustration -->
+        <div class="hero__visual fade-in fade-in--delay-2" aria-hidden="true">
+          <div class="hero__dashboard">
+            <!-- Mock Dashboard Card -->
+            <div class="hero__dashboard-card">
+              <div class="hero__dashboard-header">
+                <span class="hero__dashboard-dot hero__dashboard-dot--red"></span>
+                <span class="hero__dashboard-dot hero__dashboard-dot--yellow"></span>
+                <span class="hero__dashboard-dot hero__dashboard-dot--green"></span>
+                <span class="hero__dashboard-title">Today's Tasks</span>
+              </div>
+              <div class="hero__task-list">
+                <div class="hero__task hero__task--done">
+                  <span class="hero__task-check" aria-hidden="true">✓</span>
+                  <span>Design system audit</span>
+                  <span class="hero__task-badge hero__task-badge--done">Done</span>
+                </div>
+                <div class="hero__task hero__task--progress">
+                  <span class="hero__task-check" aria-hidden="true">◐</span>
+                  <span>API integration</span>
+                  <span class="hero__task-badge hero__task-badge--progress">In Progress</span>
+                </div>
+                <div class="hero__task">
+                  <span class="hero__task-check" aria-hidden="true">○</span>
+                  <span>User testing report</span>
+                  <span class="hero__task-badge">Todo</span>
+                </div>
+                <div class="hero__task">
+                  <span class="hero__task-check" aria-hidden="true">○</span>
+                  <span>Sprint retrospective</span>
+                  <span class="hero__task-badge">Todo</span>
+                </div>
+              </div>
+              <!-- Mini Chart -->
+              <div class="hero__chart">
+                <div class="hero__chart-label">Weekly Progress</div>
+                <div class="hero__chart-bars" aria-label="Weekly progress chart">
+                  <div class="hero__chart-bar" style="height:40%" aria-label="Monday: 40%"></div>
+                  <div class="hero__chart-bar" style="height:65%" aria-label="Tuesday: 65%"></div>
+                  <div class="hero__chart-bar" style="height:50%" aria-label="Wednesday: 50%"></div>
+                  <div class="hero__chart-bar" style="height:80%" aria-label="Thursday: 80%"></div>
+                  <div class="hero__chart-bar hero__chart-bar--active" style="height:90%" aria-label="Friday: 90%"></div>
+                  <div class="hero__chart-bar" style="height:30%" aria-label="Saturday: 30%"></div>
+                  <div class="hero__chart-bar" style="height:20%" aria-label="Sunday: 20%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating notification cards -->
+            <div class="hero__floating hero__floating--1">
+              <span aria-hidden="true">🎉</span> Task completed!
+            </div>
+            <div class="hero__floating hero__floating--2">
+              <span aria-hidden="true">👥</span> 3 collaborators online
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         FEATURES SECTION
+    ============================================= -->
+    <section class="features" id="features" aria-labelledby="features-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Features</span>
+          <h2 class="section-heading" id="features-heading">Everything You Need to Succeed</h2>
+          <p class="section-subtext">Powerful tools designed to eliminate friction and amplify your team's output.</p>
+        </div>
+
+        <div class="features__grid">
+
+          <!-- Feature 1: Task Management -->
+          <article class="feature-card fade-in" aria-labelledby="feat-1-title">
+            <div class="feature-card__icon-wrap feature-card__icon-wrap--blue" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title" id="feat-1-title">Task Management</h3>
+            <p class="feature-card__desc">Organize and track your daily tasks easily with intuitive boards, lists, and powerful filters. Never miss a deadline again.</p>
+            <ul class="feature-card__list" role="list">
+              <li>Drag-and-drop Kanban boards</li>
+              <li>Priority levels &amp; due dates</li>
+              <li>Recurring task automation</li>
+            </ul>
+            <a href="#cta" class="feature-card__link" aria-label="Learn more about Task Management">Learn more →</a>
+          </article>
+
+          <!-- Feature 2: Team Collaboration -->
+          <article class="feature-card feature-card--featured fade-in fade-in--delay-1" aria-labelledby="feat-2-title">
+            <div class="feature-card__icon-wrap feature-card__icon-wrap--purple" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <span class="feature-card__badge">Most Popular</span>
+            <h3 class="feature-card__title" id="feat-2-title">Team Collaboration</h3>
+            <p class="feature-card__desc">Work together in real-time with your team. Assign tasks, leave comments, and share files — all in one unified workspace.</p>
+            <ul class="feature-card__list" role="list">
+              <li>Real-time updates &amp; notifications</li>
+              <li>Role-based permissions</li>
+              <li>Inline comments &amp; mentions</li>
+            </ul>
+            <a href="#cta" class="feature-card__link" aria-label="Learn more about Team Collaboration">Learn more →</a>
+          </article>
+
+          <!-- Feature 3: Analytics Dashboard -->
+          <article class="feature-card fade-in fade-in--delay-2" aria-labelledby="feat-3-title">
+            <div class="feature-card__icon-wrap feature-card__icon-wrap--teal" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title" id="feat-3-title">Analytics Dashboard</h3>
+            <p class="feature-card__desc">Track your team's progress with beautiful visual reports. Spot bottlenecks early and celebrate wins with data-driven insights.</p>
+            <ul class="feature-card__list" role="list">
+              <li>Velocity &amp; burndown charts</li>
+              <li>Team productivity reports</li>
+              <li>Custom KPI dashboards</li>
+            </ul>
+            <a href="#cta" class="feature-card__link" aria-label="Learn more about Analytics Dashboard">Learn more →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         SOLUTIONS / PRICING SECTION (id="solutions" + id="pricing")
+    ============================================= -->
+    <section class="solutions" id="solutions" aria-labelledby="solutions-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Solutions</span>
+          <h2 class="section-heading" id="solutions-heading">Built for Every Team Size</h2>
+          <p class="section-subtext">From solo freelancers to enterprise organizations — SmartTaskPro scales with you.</p>
+        </div>
+
+        <div class="solutions__grid">
+          <div class="solution-item fade-in">
+            <div class="solution-item__icon" aria-hidden="true">🧑‍💻</div>
+            <h3 class="solution-item__title">Freelancers</h3>
+            <p>Stay on top of client projects and personal deadlines with a clean, distraction-free workspace.</p>
+          </div>
+          <div class="solution-item fade-in fade-in--delay-1">
+            <div class="solution-item__icon" aria-hidden="true">🚀</div>
+            <h3 class="solution-item__title">Startups</h3>
+            <p>Move fast without breaking things. Align your whole team around goals that matter.</p>
+          </div>
+          <div class="solution-item fade-in fade-in--delay-2">
+            <div class="solution-item__icon" aria-hidden="true">🏢</div>
+            <h3 class="solution-item__title">Enterprise</h3>
+            <p>Advanced security, SSO, compliance, and dedicated support for large-scale operations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing" aria-labelledby="pricing-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Pricing</span>
+          <h2 class="section-heading" id="pricing-heading">Simple, Transparent Pricing</h2>
+          <p class="section-subtext">No hidden fees. No surprise charges. Cancel anytime.</p>
+        </div>
+
+        <div class="pricing__grid">
+
+          <!-- Free -->
+          <div class="pricing-card fade-in" aria-labelledby="plan-free">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__plan" id="plan-free">Free</h3>
+              <div class="pricing-card__price">
+                <span class="pricing-card__currency">$</span>
+                <span class="pricing-card__amount">0</span>
+                <span class="pricing-card__period">/month</span>
+              </div>
+              <p class="pricing-card__desc">Perfect for individuals getting started.</p>
+            </div>
+            <ul class="pricing-card__features" role="list">
+              <li class="pricing-card__feature pricing-card__feature--yes">Up to 5 projects</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">Basic task management</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">1 GB file storage</li>
+              <li class="pricing-card__feature pricing-card__feature--no">Team collaboration</li>
+              <li class="pricing-card__feature pricing-card__feature--no">Analytics dashboard</li>
+            </ul>
+            <a href="#cta" class="btn btn--outline btn--full">Get Started Free</a>
+          </div>
+
+          <!-- Pro — Featured -->
+          <div class="pricing-card pricing-card--featured fade-in fade-in--delay-1" aria-labelledby="plan-pro">
+            <div class="pricing-card__recommended">Most Popular</div>
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__plan" id="plan-pro">Pro</h3>
+              <div class="pricing-card__price">
+                <span class="pricing-card__currency">$</span>
+                <span class="pricing-card__amount">12</span>
+                <span class="pricing-card__period">/month</span>
+              </div>
+              <p class="pricing-card__desc">Best for growing teams and professionals.</p>
+            </div>
+            <ul class="pricing-card__features" role="list">
+              <li class="pricing-card__feature pricing-card__feature--yes">Unlimited projects</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">Full task management</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">50 GB file storage</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">Team collaboration</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">Analytics dashboard</li>
+            </ul>
+            <a href="#cta" class="btn btn--primary btn--full">Start Pro Trial</a>
+          </div>
+
+          <!-- Enterprise -->
+          <div class="pricing-card fade-in fade-in--delay-2" aria-labelledby="plan-enterprise">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__plan" id="plan-enterprise">Enterprise</h3>
+              <div class="pricing-card__price">
+                <span class="pricing-card__currency"></span>
+                <span class="pricing-card__amount" style="font-size:2rem;">Custom</span>
+              </div>
+              <p class="pricing-card__desc">Tailored for large organizations.</p>
+            </div>
+            <ul class="pricing-card__features" role="list">
+              <li class="pricing-card__feature pricing-card__feature--yes">Everything in Pro</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">SSO &amp; SAML</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">Unlimited storage</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">Dedicated support</li>
+              <li class="pricing-card__feature pricing-card__feature--yes">SLA guarantee</li>
+            </ul>
+            <a href="#cta" class="btn btn--outline btn--full">Contact Sales</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         TESTIMONIALS SECTION
+    ============================================= -->
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Testimonials</span>
+          <h2 class="section-heading" id="testimonials-heading">What Our Users Say</h2>
+          <p class="section-subtext">Trusted by 12,000+ teams across 80+ countries.</p>
+        </div>
+
+        <div class="testimonials__grid">
+
+          <!-- Testimonial 1 -->
+          <blockquote class="testimonial-card fade-in" aria-labelledby="t1-author">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars" role="img">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <p class="testimonial-card__quote">
+              This tool completely changed how I manage my tasks. The Kanban view is intuitive and my whole team onboarded in under an hour. Highly recommended!
+            </p>
+            <footer class="testimonial-card__footer">
+              <div class="testimonial-card__avatar" aria-hidden="true">JD</div>
+              <div class="testimonial-card__author-info">
+                <cite class="testimonial-card__name" id="t1-author">John Doe</cite>
+                <span class="testimonial-card__role">Product Manager, TechCorp</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <!-- Testimonial 2 -->
+          <blockquote class="testimonial-card testimonial-card--featured fade-in fade-in--delay-1" aria-labelledby="t2-author">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars" role="img">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <p class="testimonial-card__quote">
+              An essential tool for our design team. The real-time collaboration is seamless, and the analytics help us track design iterations with precision.
+            </p>
+            <footer class="testimonial-card__footer">
+              <div class="testimonial-card__avatar testimonial-card__avatar--2" aria-hidden="true">PS</div>
+              <div class="testimonial-card__author-info">
+                <cite class="testimonial-card__name" id="t2-author">Priya S.</cite>
+                <span class="testimonial-card__role">Lead Designer, DesignHub</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <!-- Testimonial 3 -->
+          <blockquote class="testimonial-card fade-in fade-in--delay-2" aria-labelledby="t3-author">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars" role="img">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <p class="testimonial-card__quote">
+              We switched from three different tools to SmartTaskPro and never looked back. It's clean, fast, and the support team is fantastic.
+            </p>
+            <footer class="testimonial-card__footer">
+              <div class="testimonial-card__avatar testimonial-card__avatar--3" aria-hidden="true">MR</div>
+              <div class="testimonial-card__author-info">
+                <cite class="testimonial-card__name" id="t3-author">Marco R.</cite>
+                <span class="testimonial-card__role">CTO, BuildFast Inc.</span>
+              </div>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         CTA SECTION
+    ============================================= -->
+    <section class="cta-section" id="cta" aria-labelledby="cta-heading">
+      <div class="cta-section__blob cta-section__blob--1" aria-hidden="true"></div>
+      <div class="cta-section__blob cta-section__blob--2" aria-hidden="true"></div>
+      <div class="container">
+        <div class="cta-section__content fade-in">
+          <h2 class="cta-section__heading" id="cta-heading">Start Managing Your Tasks Today</h2>
+          <p class="cta-section__subtext">
+            Join thousands of users boosting their productivity.<br/>
+            Free forever. No credit card required.
+          </p>
+
+          <!-- Email Signup Form -->
+          <div class="cta-section__form-wrapper" role="form" aria-label="Email signup form">
+            <div class="cta-form" id="ctaForm">
+              <div class="cta-form__input-group">
+                <label for="emailInput" class="visually-hidden">Your email address</label>
+                <input
+                  type="email"
+                  id="emailInput"
+                  class="cta-form__input"
+                  placeholder="Enter your email address"
+                  autocomplete="email"
+                  aria-required="true"
+                  aria-describedby="emailError emailSuccess"
+                  maxlength="254"
+                />
+                <button
+                  type="button"
+                  class="btn btn--primary cta-form__submit"
+                  id="ctaSubmitBtn"
+                  aria-label="Start your free trial"
+                >
+                  Start Free Trial
+                </button>
+              </div>
+              <!-- Error message -->
+              <p class="cta-form__error" id="emailError" role="alert" aria-live="polite" hidden></p>
+              <!-- Success message -->
+              <p class="cta-form__success" id="emailSuccess" role="status" aria-live="polite" hidden></p>
+            </div>
+          </div>
+
+          <p class="cta-section__privacy">
+            By signing up, you agree to our
+            <a href="#" class="cta-section__link">Terms of Service</a> and
+            <a href="#" class="cta-section__link">Privacy Policy</a>.
+            No spam, ever.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       FOOTER
+  ============================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Brand -->
+        <div class="footer__brand">
+          <a href="#" class="footer__logo" aria-label="SmartTaskPro home">
+            <span class="navbar__logo-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="28" height="28" rx="8" fill="currentColor"/>
+                <path d="M8 14.5L12 18.5L20 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="footer__logo-text">SmartTaskPro</span>
+          </a>
+          <p class="footer__tagline">Manage your tasks efficiently and boost productivity across your team.</p>
+          <!-- Social Icons -->
+          <div class="footer__social" role="list" aria-label="Social media links">
+            <a href="#" class="footer__social-link" aria-label="Follow us on Instagram" role="listitem" rel="noopener noreferrer" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Follow us on X (formerly Twitter)" role="listitem" rel="noopener noreferrer" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.766l7.515-8.593L2 2.25h6.985l4.248 5.618zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Connect with us on LinkedIn" role="listitem" rel="noopener noreferrer" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <nav class="footer__nav" aria-label="Quick links">
+          <h4 class="footer__nav-title">Quick Links</h4>
+          <ul class="footer__nav-list" role="list">
+            <li><a href="#hero" class="footer__nav-link">Home</a></li>
+            <li><a href="#features" class="footer__nav-link">Features</a></li>
+            <li><a href="#pricing" class="footer__nav-link">Pricing</a></li>
+            <li><a href="#cta" class="footer__nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Resources -->
+        <nav class="footer__nav" aria-label="Resources">
+          <h4 class="footer__nav-title">Resources</h4>
+          <ul class="footer__nav-list" role="list">
+            <li><a href="#" class="footer__nav-link">Blog</a></li>
+            <li><a href="#" class="footer__nav-link">Help Center</a></li>
+            <li><a href="#" class="footer__nav-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer__nav-link">Terms of Service</a></li>
+          </ul>
+        </nav>
+
+        <!-- Newsletter mini -->
+        <div class="footer__newsletter">
+          <h4 class="footer__nav-title">Stay in the loop</h4>
+          <p class="footer__newsletter-text">Get product updates and tips delivered to your inbox.</p>
+          <div class="footer__newsletter-form">
+            <label for="footerEmail" class="visually-hidden">Email for newsletter</label>
+            <input
+              type="email"
+              id="footerEmail"
+              class="footer__newsletter-input"
+              placeholder="you@company.com"
+              autocomplete="email"
+              maxlength="254"
+              aria-label="Email for newsletter"
+            />
+            <button type="button" class="footer__newsletter-btn" id="footerSubBtn" aria-label="Subscribe to newsletter">Subscribe</button>
+          </div>
+          <p class="footer__newsletter-status" id="footerSubStatus" aria-live="polite"></p>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; <span id="currentYear"></span> SmartTaskPro. All rights reserved.
+        </p>
+        <p class="footer__made-with">
+          Made with <span aria-label="love">❤️</span> for productive teams everywhere
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Demo Modal -->
+  <div class="modal" id="demoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__content">
+      <button class="modal__close" id="modalClose" type="button" aria-label="Close demo modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <h3 class="modal__title" id="modalTitle">🎬 Product Demo</h3>
+      <p class="modal__body">Our full demo video is coming soon! In the meantime, sign up for a free trial to explore all features hands-on.</p>
+      <a href="#cta" class="btn btn--primary" id="modalCTA">Start Free Trial</a>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
