@@ -542,22 +542,27 @@ input {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Mobile Menu */
+/* Mobile Menu — hidden on all screen sizes by default */
 .navbar__mobile-menu {
-  display: none;
+  display: none; /* shown only inside the ≤768px breakpoint below */
   background: var(--clr-surface);
   border-top: 1px solid var(--clr-border);
-  padding: var(--space-lg) var(--container-pad);
-  transform: translateY(-10px);
+  padding: 0 var(--container-pad);
+  max-height: 0;
+  overflow: hidden;
   opacity: 0;
   pointer-events: none;
-  transition: transform var(--transition-base), opacity var(--transition-base);
+  transition:
+    max-height var(--transition-slow),
+    opacity var(--transition-base),
+    padding var(--transition-base);
 }
 
 .navbar__mobile-menu.is-open {
-  transform: translateY(0);
+  max-height: 400px;       /* tall enough for all menu items */
   opacity: 1;
   pointer-events: auto;
+  padding: var(--space-lg) var(--container-pad);
 }
 
 .navbar__mobile-list {
