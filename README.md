@@ -6,7 +6,7 @@ A modern SaaS landing page designed to boost productivity and task management.
 👉 https://smarttaskpro.netlify.app/
 
 ## 📸 Preview
-(Add a screenshot here)
+
 
 ## ✨ Features
 - Clean and modern UI/UX
